@@ -1,25 +1,25 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  background-color: black;
+  background-color: rgb(255, 179, 0);
 }
 
 .container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-  background-color: #fff;
+  padding: 30px;
   border-radius: 5px;
-  border: 2px solid greenyellow;
-  box-shadow: 0 0 50px greenyellow;
-  background-color: rgb(230, 216, 216);
+  box-shadow: 0px 0px 15px rgb(85, 85, 85),
+    inset -5px -5px 20px rgb(255, 255, 255),
+    inset 5px 5px 20px rgb(255, 255, 255);
+  border: 10px solid rgb(255, 179, 0);
 }
 
 h1 {
@@ -39,36 +39,40 @@ label {
   font-style: italic;
   display: block;
   margin-bottom: 10px;
-  color: gray;
+  color: rgb(0, 0, 0);
 }
 
 input[type="date"] {
-  width: 100%;
+  width: 90%;
+  height: 30px;
   cursor: text;
-  padding: 10px 5px;
+  padding: 8px;
+  font-size: 18px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgb(255, 179, 0);
+  border: none;
+  box-shadow: inset 5px 5px 10px rgb(129, 129, 129),
+    inset -5px -5px 10px rgb(255, 255, 255);
 }
 input[type="date"]:focus {
   outline: none;
-  border: 1px solid green;
 }
 button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(255, 179, 0);
+  color: rgb(0, 0, 0);
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049;
+  box-shadow: 5px 5px 10px rgb(85, 85, 85), -3px -3px 10px rgb(255, 255, 255);
 }
 
 #result {
   margin-top: 20px;
   font-size: 18px;
-  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
